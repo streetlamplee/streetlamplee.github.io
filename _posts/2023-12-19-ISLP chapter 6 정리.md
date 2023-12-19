@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ISLP chapter 6 정리
-date: 2023-12-18 19:00 +0900
-last_modified_at: 2023-12-18 19:00:00 +0900
+date: 2023-12-19 12:09 +0900
+last_modified_at: 2023-12-19 12:09:00 +0900
 tags: [Statistics, ISLP]
 toc:  true
 ---
