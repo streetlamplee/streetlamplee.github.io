@@ -172,7 +172,7 @@ ridge와 lasso는 아래의 식을 최소화한다.
 
 $\displaystyle \sum^p_{j=1}(y_j - \beta_j)^2 + \lambda \displaystyle \sum^p_{j=1} \beta^2_j$
 
-$\displaystyle \sum^p_{j=1}(y_j - \beta_j)^2 + \lambda \displaystyle \sum^p_{j=1} |\beta_j|$
+$\displaystyle \sum^p_{j=1}(y_j - \beta_j)^2 + \lambda \displaystyle \sum^p_{j=1} \|\beta_j\|$
 
 ![Alt text](\..\img\f6.10.png)
 
