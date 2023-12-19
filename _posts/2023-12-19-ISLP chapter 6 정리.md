@@ -80,7 +80,7 @@ lasso는 아래의 값을 최소화하면서 학습한다
 
 $RSS + \lambda \displaystyle \sum^p_{j=1} \|\beta_j\|$
 
-ridge와 다른점은 $\beta_j^2$ 가 $|\beta_j|$가 된 것
+ridge와 다른점은 $\beta_j^2$ 가 $\|\beta_j\|$가 된 것
 
 $l_2$ 페널티 대신, $l_1$ 페널티를 사용한다고 말할 수 있다.
 
