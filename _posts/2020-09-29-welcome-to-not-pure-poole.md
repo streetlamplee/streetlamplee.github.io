@@ -1,25 +1,15 @@
 ---
 layout: post
-title: Welcome to Not Pure Poole
-date: 2020-09-29 23:18 +0800
-last_modified_at: 2020-10-01 01:08:25 +0800
+title: jekyll을 이용한 포스팅 문법 정리
+date: 2023-10-01 23:18 +0800
+last_modified_at: 2023-10-02 01:08:25 +0800
 tags: [jekyll theme, jekyll, tutorial]
 toc:  true
 ---
-Welcome to **Not Pure Poole**! This is an example post to show the layout.
-{: .message }
 
-First, do you notice the TOC on the right side? Try to scroll down to read this post, you'll find that the TOC is always sticky in the viewport.
-
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
-
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+해당 글은 이 블로그의 theme인 'not-pure-poole' 에 대한 문법입니다.
 
 ## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
 - **To bold text**, use `<strong>`.
 - *To italicize text*, use `<em>`.
