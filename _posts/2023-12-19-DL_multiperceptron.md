@@ -68,7 +68,7 @@ $(transfer \;func) + b > 0 \;\; where\; b = w_0 - T$
 
 ### 2.2 퍼셉트론의 원리
 
-**퍼셉트론과 선형분리**
+*퍼셉트론과 선형분리*
 ---
 각 p개의 input에 $w$를 곱하고 더해주게 됨
 
@@ -94,7 +94,7 @@ XOR 논리 게이트는 하나의 퍼셉트론으로는 구현이 불가능하�
 
 ### 3.1. 모델 개요
 
-**다층 퍼셉트론 (Multi-Layer Perceptron, MLP)**
+*다층 퍼셉트론 (Multi-Layer Perceptron, MLP)*
 
 ![Alt text](\..\img\DL2-2.png)
 
