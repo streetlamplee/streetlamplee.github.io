@@ -3,7 +3,7 @@ layout: post
 title: Pytorch_Pytorch
 date: 2023-12-21 18:16 +0900
 last_modified_at: 2023-12-21 18:16:00 +0900
-tags: [DL, Pytorch]
+tags: [deeplearning, Pytorch]
 toc:  true
 ---
 
