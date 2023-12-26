@@ -12,9 +12,9 @@ toc:  true
 ### 환경 설정
 > PyTorch 설치 및 불러오기
 
-<font color = blue><b>
+
 - 패키지 설치 및 임포트
-</font><b>
+
 
 
 ```python
