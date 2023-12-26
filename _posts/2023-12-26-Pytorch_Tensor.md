@@ -29,7 +29,9 @@ toc:  true
 
 내적은 1D 텐서 단위에서만 가능하다.
 
-$C = A \cdot B \newline = \begin{bmatrix} a_1 & a_2 \end{bmatrix} \cdot \begin{bmatrix} b_1 \newline b_2 \end{bmatrix} = a_1 \times b_1 + a_2 \times b_2$
+$C = A \cdot B$ 
+
+$= \begin{bmatrix} a_1 & a_2 \end{bmatrix} \cdot \begin{bmatrix} b_1 \newline b_2 \end{bmatrix} = a_1 \times b_1 + a_2 \times b_2$
 
 이때 $C$는 Scalar
 
@@ -88,9 +90,8 @@ Sparse Tensor<br>
 (*row_index*, *column_index*, *value*)의 형태로 저장하는 방식
 
 - 장점 : 직관적이다.
-- 단점 :<br>
->1. 원소가 위치한 행과 열 인덱스를 별도로 저장해서 반복해서 저장되는 값 발생<br>메모리를 비효율적으로 사용함
->2. 원소에 접근할 때마다 행-열 인덱스와 값을 찾아야함<br>원소를 반복적으로 접근할 때, 연산 성능이 저하된다.
+- 단점 1 : 원소가 위치한 행과 열 인덱스를 별도로 저장해서 반복해서 저장되는 값 발생<br>메모리를 비효율적으로 사용함
+- 단점 2 : 원소에 접근할 때마다 행-열 인덱스와 값을 찾아야함<br>원소를 반복적으로 접근할 때, 연산 성능이 저하된다.
 
 ### 4.4 Sparse SCR/CSC Tensor
 
