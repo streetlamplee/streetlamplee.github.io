@@ -53,7 +53,7 @@ GPU가 있는 경우에는, CUDA 버전을 고려해서 pytorch를 설치해야�
 
 > CUDA 버전찾기
 >
-><a href=https://en.wikipedia.org/wiki/CUDA>CUDA Wiki</a>에서 `ctrl + F`를 이용해 GPU이름을 검색해보자
+><a href='https://en.wikipedia.org/wiki/CUDA>CUDA Wiki'</a>에서 `ctrl + F`를 이용해 GPU이름을 검색해보자
 >
 > ex, NVIDIA GFORCE GTX 1060의 Compute Capability는 6.1 버전인 것을 볼 수 있다.
 >
@@ -61,7 +61,7 @@ GPU가 있는 경우에는, CUDA 버전을 고려해서 pytorch를 설치해야�
 >
 >해당 페이지에서 바로 위의 표를 보면, 이렇게 정리되어있다.<br>CUDA SDK Version은 8.0 부터, 6.x를 지원하는 것을 볼 수 있다.
 
-<a href=https://pytorch.org/get-started/previous-versions/>파이토치 버전별 설치 페이지</a>
+<a href='https://pytorch.org/get-started/previous-versions/'>파이토치 버전별 설치 페이지</a>
 
 위의 홈페이지로 들어가서, 본인에게 맞는 CUDA SDK Version을 선택해서 설치하자<br>
 나는 11.8 버전을 설치했다.
