@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pytorch_DNN 실습 (2)
+title: Pytorch_DNN 실습 (3)
 date: 2023-12-27 17:00 +0900
 last_modified_at: 2023-12-27 17:00:00 +0900
 tags: [deeplearning, Pytorch, DNN]
