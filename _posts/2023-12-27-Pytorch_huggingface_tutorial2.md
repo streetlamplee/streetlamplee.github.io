@@ -37,3 +37,16 @@ GPU인식은 잘 된 것 같았으나, Out of Memory 에러를 뱉었다.
 그렇다고 지금 에러가 나는게 하드웨어의 스펙이 부족해서는 아니고, 설정 상 limit가 걸려있는 느낌이다.
 
 이 부분을 해결해보자
+
+확인을 해본 결과 batch size를 줄이는 것이 가장 효과적이라는 것을 알아냈다.
+<br>이미 `torch.no_grad()`와 `model.eval()`은 선언을 해두었다
+
+<a href='https://mopipe.tistory.com/192'>출처</a>
+
+![Alt text](\..\img\DL4-17.png)
+
+batch size : 10 $\rightarrow$ 4 로 하니 잘 진행이 된 모습이다.
+
+다음은 이렇게 fine-tuning한 모델로 실제 예측을 해보는 코드를 작성해볼 생각이다.
+
+코드 출처 : <a href = 'https://huggingface.co/docs/transformers/tasks/sequence_classification'>https://huggingface.co/docs/transformers/tasks/sequence_classification</a>
