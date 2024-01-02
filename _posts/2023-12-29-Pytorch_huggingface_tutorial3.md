@@ -55,7 +55,7 @@ Otherwise, make sure '\my_awesome_model' is the correct path to a directory cont
 
 ![Alt text](\..\img\DL4-20.png)
 
-작고 소중한 DL test 폴더이다.
+DL test 폴더이다.
 
 확인을 해보니, fine-tuning을 진행하면서, epoch나 iter에 따라 checkpoint가 나뉘어 폴더에 저장되는 것을 확인할 수 있었다.
 
