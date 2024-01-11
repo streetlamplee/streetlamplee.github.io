@@ -226,3 +226,10 @@ Target Encoding<br>
 * 단점1 : target 변수에 이상치가 존재하거나 범주의 종류가 소수라면 과적합 가능성이 있다.
 * 단점2 : 학습과 검증 데이터를 분할하면, 타겟 변수 특성이 이미 학습 데이터 셋에서 노출되어서 Data-Leakage 문제가 발생<br>
 $\because$ Data Split 이전에 평균을 구해 인코딩이 선행되므로
+
+---
+
+타겟 인코딩의 과적합 방지
+
+* smoothing
+* K-Fold
