@@ -1,9 +1,9 @@
 # Setup
 title: STREETLAMP
 description: 가로등의 개발 블로그
-url: https://streetlamplee.github.io
+url: https://streetlamplee.github.io/
 avatar: /profile.jpg
-paginate: 5
+paginate: 10
 permalink: pretty
 cover_image: bg.jpg
 
