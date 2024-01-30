@@ -45,6 +45,7 @@ tqdm
 optuna
 lightgbm
 xgboost
+interpret
 ```
 
 - Data feature<br>
@@ -144,7 +145,7 @@ private RMSE : 16173.2293
 **Describe the issue that your team faced during the project.**
 
 1. 결측치가 다수 존재<br>
-![Alt text](../img/house1.png)<br>
+![Alt text](\..\img\house1.png)<br>
 대부분의 column에서 결측 비율이 77% 이상을 보여, 이를 보간하는데에 어려움이 있었음<br>
 특히, 좌표X와 좌표Y 또한 결측비율이 77%로 나타나서, 같이 주어진 subway_feature나 bus_feature를 사용할 수 없었음<br>
 해당 모델에서는 수치형 변수에 대해서 선형보간으로 처리하고, 범주형 변수에 대해서는 null로 일괄 변환
@@ -334,11 +335,9 @@ plt.show()
 
 
     
-![png](final_files/final_19_0.png)
+![png](\..\img\final_19_0.png)
     
 
-
-비교적 많은 feature가 77%이상의 결측비율을 가지는 것을 확인할 수 있음
 
 #### 상관관계 확인
 
@@ -358,7 +357,7 @@ plt.figure(figsize=(15,15))
 sns.heatmap(data = train.corr(numeric_only=True), annot = True, fmt = '.2f', cmap='RdYlGn_r')
 ```
 
-![png](final_files/final_23_3.png)
+![png](\..\img\final_23_3.png)
 
 1. '135m초과'는 어떠한 column과도 상관관계가 존재하지 않는다.
 2. 아파트의 크기와 관련된 feature들은 서로 강한 상관관계가 있다.<br>
@@ -374,7 +373,7 @@ for i, v in enumerate(['전용면적_m','주거전용면적','연면적','주차
 
 
     
-![png](final_files/final_25_0.png)
+![png](\..\img\final_25_0.png)
     
 
 
@@ -753,17 +752,6 @@ np.mean(evaluation)
     3068.63
 
 
-
-```python
-importances = pd.Series(model.feature_importances_, index=list(X_train.columns))
-importances = importances.sort_values(ascending=False)
-
-plt.figure(figsize=(10,8))
-plt.title("Feature Importances")
-sns.barplot(x=importances, y=importances.index)
-plt.show()
-```
-
     
 ### 6. inference
 
@@ -858,6 +846,24 @@ study.optimize(opt_func, n_trials = 5000)
                         <br> Best is trial 882 with value: 3068.63159665463.
 
 (이후 생략)
+
+
+### 8. feature importance를 확인하기 위해 사용한 코드
+
+```python
+from interpret.glassbox import ExplainableBoostingRegressor
+from interpret import show
+
+interpretmodel = ExplainableBoostingRegressor()
+interpretmodel.fit(X_train, y_train)
+
+from interpret import set_visualize_provider
+from interpret.provider import InlineProvider
+
+set_visualize_provider(InlineProvider())
+show(interpretmodel.explain_global())
+
+```
 
 **Sum up your project and suggest future extensions and improvements.**
 
