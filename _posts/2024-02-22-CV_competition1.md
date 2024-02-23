@@ -11,7 +11,7 @@ toc: true
 ## 1. Abstract
 
 **Goal of the Competition**<br>
-![alt text](../img/competition1.png)
+![alt text](..\img\competition1.png)
 
 해당 대회의 상위권 진출을 목표로 함
     
@@ -122,7 +122,7 @@ Optimizer는 **Adam** 사용, LR은 **CosineAnnealingWarmRestarts를 이용해 1
 1. 몇몇 train data에 labeling이 잘 되어 있지 않은 경우가 있음<br>
 train data를 class 별로 나누어 폴더로 정리한 후에, 하나하나 확인하면서 class에 어긋난 데이터가 있는지 확인을 했음. 그리고 라벨링이 잘못된 데이터는 augmentation 과정 이전에 데이터를 삭제함으로써 모델의 학습에 해당 데이터가 관여하지 못하도록 함
 2. train data에서 class imbalance가 존재했음<br>
-![alt text](../img/competition2.png)<br>
+![alt text](..\img\competition2.png)<br>
 앞에서 라벨링이 맞지 않아 삭제한 데이터도 있고, 이미 제공된 데이터 상에서도 class imbalance가 존재했음. 이러한 점을 토대로 Focal Loss를 이용해서 적은 데이터에 대한 모델의 예측에 가중치를 주어 해결하고자 했으며, 실험 중에 혹시나 성능에 차이가 있을까 하여 Up-sampling을 통해 데이터의 밸런스를 맞추는 것도 실험해 보았음
 3. test data는 원본 사진이 아닌 이미 augmentation이 적용되어있음<br>
 test data는 이미 augmentation이 적용이 되어있는 이미지로 구성되어있음. 그 augmentation은 Flip, Rotate, Contrast, Noise 등 다양한 augmentation이 이미 적용.<br>
