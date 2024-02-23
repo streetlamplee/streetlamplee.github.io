@@ -1,5 +1,5 @@
 ---
-title: CNN Object Detectoin
+title: CNN Object Detection
 layout: post
 date: 2024-02-01 10:06 +0900
 last_modified_at: 2024-02-01 10:06:00 +0900

@@ -1,8 +1,8 @@
 ---
-title: CNN Object Detectoin
+title: CV Generative Models
 layout: post
 date: 2024-02-21 17:06 +0900
-last_modified_at: 2024-02-21 17:06:00 +0900
+last_modified_at: 2024-02-23 17:06:00 +0900
 tag: [DL, CV, Generative_model]
 toc: true
 ---
@@ -493,3 +493,21 @@ CLIP에서 얻은 text에서의 feature를 찾고, image encoder를 통과해서
 이때 text는 그 사진 class에 대해 설명이 된 text이다.
 
 ex. text : 개는 네 발이 있고 주둥이가 길고 귀가 넓적하다.
+
+# 오토 인코더의 이해
+
+## 1. 오토 인코더
+
+### 1.1 오토 인코더
+
+
+
+## 2. 디노이징 오토 인코더
+
+### 2.1 디노이징 오토 인코더
+
+## 3. 오토 인코더의 활용
+
+### 3.1 특징 추출
+
+### 3.2 이상치 탐지
