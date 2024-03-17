@@ -3,7 +3,7 @@ title: 아파트 거래금액 예측 대회
 layout: post
 date: 2024-01-29 11:00 +0900
 last_modified_at: 2024-01-29 12:00:00 +0900
-tag: [ML, 패스트캠퍼스, Upstage, AI, 데이터분석 ,데이터사이언스 ,인공지능개발자,]
+tag: [ML,  Upstage, AI]
 toc: true
 ---
 
@@ -196,19 +196,21 @@ EDA, Data Clensing, Feature Selection, Modeling
 
 **Write the main result of Competition**
 
-- 결과(개인)<br>
-local RMSE : 3068.63<br>
-public RMSE : 103990.5716 (재채점 전)<br>
-private RMSE : - (채점 전)
-
 - 결과(팀)<br>
-local RMSE : - (정보 누락)<br>
-public RMSE : 18200.0390<br>
-private RMSE : 16173.2293
+local RMSE : 6068.63<br>
+public RMSE : 17386.8731<br>
+private RMSE : 18414.4742
+
+- 결과(개인)<br>
+local RMSE : 5481.3258<br>
+public RMSE : 18881.3815<br>
+private RMSE : 12353.6405
+
+![alt text](..\img\result.png)
 
 **Final standings of the Leaderboard**
 
-**4등 기록**
+**3등 기록**
     
 
 ## 6. Conclusion
