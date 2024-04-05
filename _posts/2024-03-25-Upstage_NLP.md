@@ -2,7 +2,7 @@
 title: 일상 대화 요약 대회
 layout: post
 date: 2024-03-25 11:00 +0900
-last_modified_at: 2024-03-25 12:00:00 +0900
+last_modified_at: 2024-04-05 18:00:00 +0900
 tag: [DL,  Upstage, AI ,데이터분석 ,데이터사이언스 , NLP ,자연어처리 ,경진대회]
 toc: true
 ---
